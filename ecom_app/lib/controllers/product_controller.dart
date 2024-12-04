@@ -8,7 +8,7 @@ class ProductController {
   Future<List<Product>> loadPopularProduct() async {
     try {
       http.Response response = await http.get(
-          Uri.parse("$uri/api/product/get-all"),
+          Uri.parse("$uri/api/product/get-all-app"),
           headers: <String,String> {
             "Content-Type": 'application/json; charset=UTF-8'
           }
